@@ -1,0 +1,576 @@
+/*********  TAG Selectors  *********/
+body {
+  text-align: center;
+}
+/* svg {
+  text-align: center;
+  margin-top: 25% 0;
+} */
+
+/*********  CLASS Selectors  *********/
+/* Speech Starts*/
+.blockquote-footer {
+  padding: 1%;
+}
+
+.title-word {
+  animation: color-animation 4s linear infinite;
+}
+
+.title-word-1 {
+  --color-1: #DF8453;
+  --color-2: #3D8DAE;
+  --color-3: #E4A9A8;
+}
+
+.title-word-2 {
+  --color-1: #DBAD4A;
+  --color-2: #ACCFCB;
+  --color-3: #17494D;
+}
+
+.title-word-3 {
+  --color-1: #ACCFCB;
+  --color-2: #E4A9A8;
+  --color-3: #ACCFCB;
+}
+
+.title-word-4 {
+  --color-1: #3D8DAE;
+  --color-2: #DF8453;
+  --color-3: #E4A9A8;
+}
+
+@keyframes color-animation {
+  0% {
+    color: var(--color-1)
+  }
+
+  32% {
+    color: var(--color-1)
+  }
+
+  33% {
+    color: var(--color-2)
+  }
+
+  65% {
+    color: var(--color-2)
+  }
+
+  66% {
+    color: var(--color-3)
+  }
+
+  99% {
+    color: var(--color-3)
+  }
+
+  100% {
+    color: var(--color-1)
+  }
+}
+
+.speech {
+  display: grid;
+  place-items: center;
+  text-align: center;
+  height: 100vh;
+  /* background-color: rgb(248, 249, 250); */
+  background-color: #fff;
+}
+
+.title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 550;
+  font-size: 5vw;
+  text-transform: uppercase;
+  margin: 0 25%;
+}
+
+/* Speech Ends */
+/* Navigation Bar Starts */
+.nav-link {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+/* Navigation Bar Ends */
+/* About Title Starts */
+.animate-charcter {
+  /* text-transform: uppercase; */
+  background-image: linear-gradient(-225deg,
+      #ffffff 0%,
+      #6666ff 29%,
+      #ff1361 67%,
+      #fff800 100%);
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+  /* font-size: 190px; */
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+/* About Title Ends */
+
+/* About Content Starts */
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.about-style {
+  /* height: 100vh; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-style h1 {
+  font-family: "Montserrat Medium";
+  /* max-width: 40ch; */
+  margin-top:0;
+  text-align: center;
+  transform: scale(0.94);
+  animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+}
+@keyframes scale {
+  100% {
+    transform: scale(1);
+  }
+}
+
+#about span {
+  display: inline-block;
+  opacity: 0;
+  filter: blur(4px);
+}
+
+#about span:nth-child(1) {
+  animation: fade-in 0.8s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+#about span:nth-child(2) {
+  animation: fade-in 0.8s 0.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+#about span:nth-child(3) {
+  animation: fade-in 0.8s 0.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+#about span:nth-child(4) {
+  animation: fade-in 0.8s 0.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+#about span:nth-child(5) {
+  animation: fade-in 0.8s 0.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+#about span:nth-child(6) {
+  animation: fade-in 0.8s 0.6s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+#about span:nth-child(7) {
+  animation: fade-in 0.8s 0.7s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+#about span:nth-child(8) {
+  animation: fade-in 0.8s 0.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+#about span:nth-child(9) {
+  animation: fade-in 0.8s 0.9s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+#about span:nth-child(10) {
+  animation: fade-in 0.8s 1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+#about span:nth-child(11) {
+  animation: fade-in 0.8s 1.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+#about span:nth-child(12) {
+  animation: fade-in 0.8s 1.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+#about span:nth-child(13) {
+  animation: fade-in 0.8s 1.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+#about span:nth-child(14) {
+  animation: fade-in 0.8s 1.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+#about span:nth-child(15) {
+  animation: fade-in 0.8s 1.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+#about span:nth-child(16) {
+  animation: fade-in 0.8s 1.6s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+#about span:nth-child(17) {
+  animation: fade-in 0.8s 1.7s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+#about span:nth-child(18) {
+  animation: fade-in 0.8s 1.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+@keyframes fade-in {
+  100% {
+    opacity: 1;
+    filter: blur(0);
+  }
+}
+/* About Content Ends */
+
+.about-description {
+  padding: 5%;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 1.8;
+}
+
+.responsive {
+  max-width: 100%;
+  height: auto;
+}
+
+.pad {
+  margin : 5% 0;
+}
+
+.style-card {
+  box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.2), 6px 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background: linear-gradient(to top left, #3366cc 0%, #000066 100%);
+}
+.carousel {
+  box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.2), 6px 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* FAQ Masonry Starts */
+ @import('https://fonts.googleapis.com/css?family=Rubik:300,400,500&display=swap');
+*
+{
+  margin : 0;
+  padding : 0;
+  box-sizing : border-box;
+  font-family: 'Rubik',sans-serif;
+}
+.faq-container {
+  position: relative;
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+  grid-template-rows: minmax(100px, auto);
+  margin : 40px;
+  grid-auto-flow: dense;
+  grid-gap : 10px;
+}
+.faq-container .box {
+  background: #333;
+  padding : 30px;
+  display: grid;
+  place-items : center;
+  text-align: center;
+  color : #fff;
+  transition: 0.5s;
+}
+.faq-container .box:hover {
+  background : #E91E63;
+}
+.faq-container .box h1 {
+  position : relative;
+  margin-bottom: 10px;
+}
+.faq-container .box p {
+  font-size: 30px;
+  margin: 5% 0;
+}
+@midea (max-width: 991px) {
+  .faq-container {
+    grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
+    grid-template-rows: minmax(auto, auto);
+  }
+  .faq-container .box {
+    grid-column: unset !important;
+    grid-row : unset !important;
+  }
+}
+/* FAQ Masonry Ends */
+/* Location Tab Starts */
+.nav-tabs {
+  border-bottom: 1px solid #E0E0FB;
+}
+.nav-tabs .nav-link.active {
+  background: #2E2FE3;
+  color: #fff;
+  border: 1px solid #2E2FE3;
+  margin-right: 2%;
+
+}
+.nav-tabs .nav-link {
+  color: #2E2FE3;
+  border: 1px solid #2E2FE3;
+  margin: 4%;
+}
+.nav-tabs .nav-link:hover {
+  border: 2px solid #2E2FE3;
+}
+/* Map Helper Starts */
+.phonebook {
+  margin-top: 12%;
+}
+.phone {
+  background-color:#8A8AEF ;
+  box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.2), 6px 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 10px;
+}
+/* Map Helper Ends */
+/* Location Tab Ends */
+.email {
+  font-weight: 300;
+  font-size: 25px;
+}
+/* Footer Styling Starts */
+@import('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap');
+*
+{
+  box-sizing:border-box;
+  font-family: "Poppins", sans-serif;
+}
+footer {
+  position:relative;
+  width: 100%;
+  background: #3586ff;
+  min-height: 100px;
+  padding: 20px 50px;
+  flex-direction: column;
+}
+.social-icon, .menue {
+  flex wrap: wrap;
+  margin: 1% 0;
+}
+.social-icon a{
+  font-size: 2rem;
+  color: #fff;
+  margin: 0 1%;
+  display: inline-block;
+  transition: 0.5s;
+}
+.social-icon a:hover {
+  transform : translateY(-10px);
+}
+.menu a {
+  font-size: 1.4rem;
+  color: #fff;
+  margin: 0 1%;
+  display: inline-block;
+  text-decoration: none;
+  opacity: 0.75;
+}
+.menu a:hover {
+  opacity:1;
+}
+.menu p {
+  font-size: 20px;
+  margin: 1%;
+}
+
+.wave img {
+  position: absolute;
+  top: -100px;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background-size: 1000px 100px;
+}
+.wave#wave-1 {
+  z-index: 1000;
+  opacity:1;
+  bottom: 0;
+  animation: animateWaves1 4s linear infinite;
+}
+@keyframes animateWaves1 {
+  0% {
+    background-position-x: 1000px;
+  }
+  100% {
+    background-position-x: 0;
+  }
+}
+/* Footer Styling Ends */
+.intro-pic {
+  position: absolute;
+}
+.speech img {
+  left: 78%;
+  top: 35%;
+}
+footer img {
+  right: 80%;
+  bottom: 1%;
+}
+
+/* Prize Title Animation Starts */
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.waviy {
+  position: relative;
+  -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0,0,0,.2));
+  font-size: 60px;
+  margin: 5% 0 0;
+}
+.waviy span {
+  font-family: 'Alfa Slab One', cursive;
+  position: relative;
+  display: inline-block;
+  color: #000;
+  text-transform: uppercase;
+  animation: waviy 1s infinite;
+  animation-delay: calc(.1s * var(--i));
+
+}
+@keyframes waviy {
+  0%,40%,100% {
+    transform: translateY(0)
+  }
+  20% {
+    transform: translateY(-20px)
+  }
+}
+/* Prize Title Animation Ends */
+
+/* Course Title Starts */
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.content {
+  position: relative;
+}
+section {
+  display: flex;
+  /* background: #000; */
+  min-height: 100px;
+  align-items: center;
+  justify-content: center;
+}
+.content h2 {
+  color: #fff;
+  font-size: 8em;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
+.content h2:nth-child(1) {
+  color: transparent;
+  -webkit-text-stroke: 2px #03a9f4;
+}
+
+.content h2:nth-child(2) {
+  color: #03a9f4;
+  animation: animate 4s ease-in-out infinite;
+}
+
+@keyframes animate {
+  0%,
+  100% {
+    clip-path: polygon(
+      0% 45%,
+      16% 44%,
+      33% 50%,
+      54% 60%,
+      70% 61%,
+      84% 59%,
+      100% 52%,
+      100% 100%,
+      0% 100%
+    );
+  }
+
+  50% {
+    clip-path: polygon(
+      0% 60%,
+      15% 65%,
+      34% 66%,
+      51% 62%,
+      67% 50%,
+      84% 45%,
+      100% 46%,
+      100% 100%,
+      0% 100%
+    );
+  }
+}
+/* Course Title Ends */
+/*********  ID Selectors  *********/
+#about {
+  background-color: #13133a;
+}
+#speakers {
+  background-image: url('https://ieee-jaduniv.in/mlas-2.0/assets/media/BG2.jpeg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  padding: 5% 0;
+}
+#faq {
+  display: flex;
+  justify-content : center;
+  align-self: center;
+  min-height : 200px;
+  background: #222;
+}
+#footer {
+  display:flex;
+  justify-content : center;
+  align-items: flex-end;
+  min-height: 40vh;
+  /* background: #333; */
+}
+#course {
+  background: #f2f2f2;
+}
+#course h1 {
+  text-align: left;
+  margin: 3% 5%;
+}
+#prizes {
+  /* background-color:  #151719; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+#address {
+  background-color: rgb(248, 249, 250);
+}
+#map {
+  background-color: rgb(248, 249, 250);
+}
